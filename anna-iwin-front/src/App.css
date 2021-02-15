@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.picture {
+  background-image: url("./art/spaceFace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 350vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
