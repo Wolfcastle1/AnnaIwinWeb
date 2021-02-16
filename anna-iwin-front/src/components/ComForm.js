@@ -10,7 +10,6 @@ import Paper from '@material-ui/core/Paper';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,9 +62,6 @@ function ComForm() {
     const classes = useStyles();
 
     const [type, setType] = React.useState('');
-    const [atype, setaType] = React.useState('');
-    const [btype, setbType] = React.useState('');
-    const [ctype, setcType] = React.useState('');
 
     const handleTypeChange = (event) => {
         setType(event.target.value);

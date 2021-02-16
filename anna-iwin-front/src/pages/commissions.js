@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import ComForm from '../components/ComForm.js';
-import Grid from '@material-ui/core/Grid';
 import ComInfo from '../components/ComInfo.js'
 
 

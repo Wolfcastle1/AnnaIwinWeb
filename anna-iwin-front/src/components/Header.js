@@ -1,7 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
 
-import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -13,16 +11,13 @@ import Button from '@material-ui/core/Button';
 
 
 // Icons
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 // Routing
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 import './Header.css';
 
-const drawerWidth = 240;
 
 
 const useStyles = makeStyles((theme) => ({

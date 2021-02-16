@@ -1,23 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import ResponsiveDrawer from './pages/ResponsiveDrawer.js'
 import './App.css';
 
 // art
-import speederman from './art/speederman.jpeg'
-
-import Header from './components/Header.js';
 
 import About from './pages/about.js';
 import Home from './pages/home.js';
 import Commissions from './pages/commissions.js';
 import Portfolio from './pages/portfolio.js';
-
-// MUI Elements
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 
 //custom themes
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -29,10 +18,8 @@ import { ThemeProvider } from '@material-ui/styles';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core';
 
 
 //My Custom Theme

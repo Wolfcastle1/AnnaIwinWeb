@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+//import { makeStyles } from '@material-ui/core/styles';
 
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { getAverageColor } from 'fast-average-color-node';
+// import { getAverageColor } from 'fast-average-color-node';
 
 import "./portfolio.css";
 
 
 
 
+
+
 //Pieces
-import annaPic from '../art/annaPic.JPG';
 import classicStatue from '../art/classicStatue.jpg';
 import spaceFace from '../art/spaceFace.jpg';
 import speederman from '../art/speederman.jpeg';
@@ -41,7 +42,7 @@ import PetComm from '../art/Pet_commission.jpg';
 import Modal from '@material-ui/core/Modal';
 
 
-const useStyles = makeStyles((theme) => ({
+//const useStyles = makeStyles((theme) => ({
     // container: { //container holding the image and description
 
     //     width: "20vw",
@@ -100,16 +101,16 @@ const useStyles = makeStyles((theme) => ({
     // body: {
     //     textAlign: 'center',
     // },
-}));
+//}));
 
 
 function Portfolio() {
 
     //Style
-    const classes = useStyles();
+    //const classes = useStyles();
 
     const [open, setOpen] = React.useState(false);
-    const [num, setNum] = React.useState(5);
+    //const [num, setNum] = React.useState(5);
 
     //Data on peices and information 
     const pieces = [
@@ -171,9 +172,9 @@ function Portfolio() {
 
             {pieces.map((p, key) =>
                     <div class='container'>
-                    <img src={p.source} class='image' onClick={(e) => handleOpen(key)} />
+                    <img src={p.source} alt={p.name} class='image' onClick={(e) => handleOpen(key)} />
                     
-                </div>
+                    </div>
             )}
 
 
@@ -194,7 +195,7 @@ function Portfolio() {
             >
                 <Fade in={open}>
                     <div class='paper'>
-                        <img src={pieces[piece].source} backgroundColor={pieces[piece].color} class='imageInside' />
+                        <img src={pieces[piece].source} backgroundColor={pieces[piece].color} alt={pieces[piece].name} class='imageInside' />
                         <h2 id="transition-modal-title">{pieces[piece].name}</h2>
                         <p id="transition-modal-description">{pieces[piece].desc}</p>
                     </div>

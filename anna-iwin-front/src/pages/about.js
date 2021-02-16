@@ -1,6 +1,4 @@
 import React from 'react';
-import ResponsiveDrawer from './ResponsiveDrawer.js';
-import annaPic from '../art/annaPic.JPG'; // 1:1 ratio
 
 import { makeStyles } from '@material-ui/core/styles';
 
