@@ -7,8 +7,11 @@ import Fade from '@material-ui/core/Fade';
 //CSS
 import "./portfolio.css";
 
+//Styling
+import { makeStyles } from '@material-ui/core/styles';
+
 //Floating Action Button
-//import Fab from '@material-ui/core/Fab';
+import Fab from '@material-ui/core/Fab';
 
 //icons
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai"
@@ -18,7 +21,18 @@ import { pieces } from '../data/artInfo.js';
 import Modal from '@material-ui/core/Modal';
 
 
+const useStyles = makeStyles((theme) => ({
+    fab: {
+        position: 'relative',
+        size: 'small',
+    },
+
+}));
+
+
 function Portfolio() {
+
+    const classes = useStyles();
 
     const [open, setOpen] = React.useState(false);
 
@@ -105,17 +119,23 @@ function Portfolio() {
             >
                 <Fade in={open}>
                     <div class='paper'>
-                        <img src={pieces[piece].source} alt={pieces[piece].name} class='imageInside' />
+                        <div class='fabContainerLeft'>
+                            <Fab color="primary" className={classes.fab} onClick={handlePrev}>
+                                <AiOutlineArrowLeft />
+                            </Fab>
+                        </div>
+                            <img src={pieces[piece].source} alt={pieces[piece].name} class='imageInside' />
+                        <div class='fabContainerRight'>
+                            <Fab color="primary" className={classes.fab} onClick={handleNext}>
+                                <AiOutlineArrowRight />
+                            </Fab>
+                        </div>
                         <h2 id="transition-modal-title">{pieces[piece].name}</h2>
-                        <p id="transition-modal-description">{pieces[piece].desc}</p>
 
-                        <button onClick={handlePrev}>
-                            <AiOutlineArrowLeft />
-                        </button>
+                        <p id="medium">Medium: {pieces[piece].medium}</p>
 
-                        <button onClick={handleNext}>
-                            <AiOutlineArrowRight />
-                        </button>
+                        <p id="description">{pieces[piece].desc}</p>
+
 
 
                     </div>

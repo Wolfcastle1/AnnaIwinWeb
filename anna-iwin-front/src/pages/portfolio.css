@@ -9,6 +9,17 @@
     position: relative;
 }
 
+.fabContainerLeft{
+    position: absolute;
+    bottom: 50%; 
+    left: 7%;
+}
+
+.fabContainerRight{
+    position: absolute;
+    bottom: 50%; 
+    right: 7%;
+}
 
 .desc {
     padding: 5px; 
@@ -36,7 +47,7 @@
         object-fit: contain;
     }
     .paper {
-        height: 90vh;
+        /* height: 90vh; */
         width: 70vw;
     }
 }
@@ -65,7 +76,7 @@
 }
 
 .paper {
-    background-color: #ED6A5A; 
+    background-color: #d5c3bcff; 
     border: 2px solid black;
     box-shadow: 5px;
     /* padding */
@@ -79,3 +90,4 @@
 .imageInside{
     padding: 5px;
 }
+
