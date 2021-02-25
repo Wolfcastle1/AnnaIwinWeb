@@ -1,6 +1,14 @@
+
+
 .App {
   text-align: center;
 }
+
+.head {
+  text-align: center;
+  margin: 1%;
+}
+
 
 .picture {
   background-image: url("./art/spaceFace.jpg");
