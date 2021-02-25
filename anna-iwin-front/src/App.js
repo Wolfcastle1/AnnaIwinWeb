@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import About from './pages/about.js';
 import Home from './pages/home.js';
-import Commissions from './pages/commissions.js';
+// import Commissions from './pages/commissions.js';
 import Portfolio from './pages/portfolio.js';
 
 //custom themes
