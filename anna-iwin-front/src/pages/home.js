@@ -1,18 +1,26 @@
 import React from 'react';
+import './home.css'
 
 import { makeStyles } from '@material-ui/core/styles';
+
+import logo from '../art/Anna_logo.png'
+
+
 
 const useStyles = makeStyles((theme) => ({
     
     body: {
         width: '100vw',
-        height: '100vh',
         textAlign: 'center',
-        
+        backgroundColor: '#fff2ec',
     },
 
     pad: {
-        padding: '2%',
+        padding: '0px',
+    },
+
+    image: {
+        width: '50vw',
     },
 
 }));
@@ -24,9 +32,12 @@ function Home() {
 
     return (
         <div className={classes.body}>
+            
             <h1>
                 Hello!
             </h1>
+            
+            <img class='image' src={logo} alt="logo"/>
 
             <p className={classes.pad}>*image of logo type thing*</p>
 

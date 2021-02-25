@@ -1,0 +1,17 @@
+
+@media (orientation: portrait) {
+
+    .image{ 
+        width: 50vw;
+        height: auto;
+    }
+}
+
+
+@media (orientation: landscape) {
+
+    .image{ 
+        height: 75vh;
+        width: auto;
+    }   
+}
