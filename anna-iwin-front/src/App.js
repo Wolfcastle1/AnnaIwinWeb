@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import About from './pages/about.js';
 import Home from './pages/home.js';
-// import Commissions from './pages/commissions.js';
+import Contact from './pages/contact.js';
 import Portfolio from './pages/portfolio.js';
 
 //custom themes
@@ -79,14 +79,13 @@ function App() {
             <Button className={classes.button} variant="contained" color="primary" href="/">Home</Button>
             <Button className={classes.button} variant="contained" color="primary" href="/about-me">about</Button>
             <Button className={classes.button} variant="contained" color="primary" href="/portfolio">portfolio</Button>
+            <Button className={classes.button} variant="contained" color="primary" href="/contact">Contact</Button>
           </div>
           <Switch>
             <Route exact path='/' component={Home}></Route>
-            {/* <Route exact path='/home' component={Home}></Route> */}
             <Route exact path='/about-me' component={About}></Route>
-            {/* <Route exact path='/commissions' component={Commissions}></Route> */}
             <Route exact path='/portfolio' component={Portfolio}></Route>
-
+            <Route exact path='/contact' component={Contact}></Route>
           </Switch>
         </Router>
       </ThemeProvider>
