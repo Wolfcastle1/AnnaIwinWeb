@@ -43,7 +43,7 @@
 
     .imageInside{
         height: 60vh;
-        /* width: 65vw; */
+        width: 65vw;
         object-fit: contain;
     }
     .paper {
@@ -55,7 +55,7 @@
 @media (orientation: portrait) {
     .imageInside {
         width: 60vw;
-        /* height: 60vw; */
+        height: 60vw;
         object-fit: contain;
     }
     .paper{
@@ -88,7 +88,7 @@
 }
 
 .imageInside{
-    border: 2px solid white;
+    padding: 5px;
 }
 
 p{
