@@ -85,7 +85,7 @@ function Portfolio() {
             </p>
 
             <p>
-                click on any image to enhance and read details.
+                Click on any image to enhance and read details.
             </p>
 
             <p>
