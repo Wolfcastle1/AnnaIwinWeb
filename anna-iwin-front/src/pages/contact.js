@@ -8,11 +8,6 @@ const useStyles = makeStyles((theme) => ({
 
     tint: {
         backgroundColor: '#ffc6b5',
-
-        // position: 'absolute',
-        // top: '50%',
-        // left: '50%',
-
     }
 
 }));

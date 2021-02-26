@@ -3,7 +3,7 @@ import './home.css'
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import logo from '../art/Anna_logo.png'
+import logo from '../art/logo_with_circle.png'
 
 
 
